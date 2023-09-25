@@ -1,0 +1,115 @@
+img {
+    width: 40%;
+    height: 500px;
+
+
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(34, 34, 34), rgb(6, 6, 6));
+    color: rgb(255, 255, 255);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media(max-width: 450px) {
+    img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+
+
+#title {
+    flex-direction: column;
+    line-height: 40px;
+}
+
+
+h1 {
+    font-weight: 190;
+    font-size: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    min-width: 400px;
+    max-width: 800px;
+
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 60px;
+}
+
+p {
+    font-size: 13px;
+    max-width: 705px;
+    text-align: 20px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 10px;
+    align-items: center;
+    padding: 16px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+a {
+    color: rgb(255, 157, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 238, 1);
+}
+
+
+section {
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(2, 2, 2);
+}
+
+mark {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid;
+    padding: 15px;
+
+}
+
+.texto {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(45deg, #3be2ff, #0055ff, #4400ff, #00ffcc);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite;
+   -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
